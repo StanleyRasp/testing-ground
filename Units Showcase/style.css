@@ -20,7 +20,7 @@ h1{
     font-size: 2rem;
 }
 
-.unit{
+.container > div > div{
     height: 3px;
     background-color: white;
     display: inline-block;

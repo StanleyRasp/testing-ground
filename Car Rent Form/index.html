@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Car Renting Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Car renting form</h1>
+        <form action="http://httpbin.org/post" method="post">
+            <div class="form-field">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name">
+            </div>
+
+            <div class="form-field">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email adress</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-field">
+                <label for="car-select">Select a car to rent</label>
+                <select name="car" id="car-select">
+                    <option hidden disabled selected value> -- select an option -- </option>
+                    <optgroup label="Cars">
+                        <option value="mb-c200">Mercedes-Benz C200</option>
+                        <option value="bmw-325i">BMW 325i</option>
+                        <option value="audi-a3">Audi A3</option>
+                        <option value="vw-passat">Volkswagen Passat</option>
+                    </optgroup>
+                    <optgroup label="Trucks">
+                        <option value="toyota-tacoma">Toyota Tacoma</option>
+                        <option value="mb-sprinter">Mercedes-Benz Sprinter LWB</option>
+                        <option value="ford-f150">Ford F150</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label class="selector-group-label">You are renting for a:</label>
+                <div class="radio-group selector-group">
+                    <div class="radio-selector selector">
+                        <input type="radio" name="customer" id="private" value="private">
+                        <label for="private">Private Person</label>
+                    </div>
+                    <div class="radio-selector selector">
+                        <input type="radio" name="customer" id="company" value="company">
+                        <label for="company">Company</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="selector-group-label" >Special Services</label>
+                <div class="checkbox-group selector-group">
+                    <div class="checkbox-selector selector">
+                        <input type="checkbox" name="special-services" id="tire-pack" value="tire-pack">
+                        <label for="tire-pack">Tire Pack (A set of tires with free changes at partnered shops)</label>
+                    </div>
+                    <div class="checkbox-selector selector">
+                        <input type="checkbox" name="special-services" id="service-pack" value="service-pack">
+                        <label for="service-pack">Service Pack (Free maintenence at partnered shops)</label>
+                    </div>
+                    <div class="checkbox-selector selector">
+                        <input type="checkbox" name="special-services" id="insurance-pack" value="insurance-pack">
+                        <label for="insurance-pack">Insurance Pack (Full insurance OC, AC, NWW, Assistance)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="comment-field">Special requests</label>
+                <textarea name="comment" id="comment-field" cols="40" rows="7"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>

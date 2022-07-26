@@ -1,0 +1,64 @@
+html{
+    font-family: monospace;
+    background-color: #333;
+    color: white;
+    line-height: .4em;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    letter-spacing: .1em;
+    font-weight: 700;
+}
+
+.form-field{
+    margin: 1.5em 0;
+}
+
+.form-field > *{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: .5em;
+}
+
+button{
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit; 
+    padding: .5em;
+    margin: 0.5em 0;
+}
+
+.selector-group-label{
+    margin-bottom: .6em;
+}
+
+.selector{
+    display: flex;
+}
+
+.selector input{
+    margin: 0 .3em;
+}
